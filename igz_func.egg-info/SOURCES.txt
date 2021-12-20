@@ -1,0 +1,14 @@
+setup.py
+dags/__init__.py
+dags/afd-mlrun-spark-iguazio.py
+func/__init__.py
+func/createFunction.py
+func/remoteTrigger.py
+func/runner.py
+igz_func.egg-info/PKG-INFO
+igz_func.egg-info/SOURCES.txt
+igz_func.egg-info/dependency_links.txt
+igz_func.egg-info/requires.txt
+igz_func.egg-info/top_level.txt
+modules/__init__.py
+modules/jobA.py
