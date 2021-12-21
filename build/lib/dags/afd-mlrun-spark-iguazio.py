@@ -1,11 +1,10 @@
 import sys
-import os
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
-from airflow.operators.bash_operator import BashOperator
+from airflow.operators.dummy_operator import DummyOperator
 from datetime import datetime, timedelta
 
-sys.path.insert(0, '/opt/airflow/files/igz_func-1.0-py3.8.egg')
+sys.path.insert(0, '/opt/airflow/dist/igz_func-1.0-py3.8.egg')
 from func import remoteTrigger as f
 
 default_args = {
@@ -24,11 +23,14 @@ with DAG(dag_id='afd-airflow-spark-iguazio',
          default_args=default_args,
          catchup=False
          ) as dag:
+    start = DummyOperator(task_id="Start")
 
-    taskA = Bash
-    taskA = PythonOperator(task_id="taskA",
+    sparkIgzTask = PythonOperator(task_id="sparkIgzTask",
                            python_callable=f.trigger_igz_spark,
-                           params={"sparksimulationab","igz_test_job"}
+                           op_kwargs={'project': 'sparksimulationab', 'function': 'igz_func_joba'},
+                           provide_context=True
                            )
 
-    taskA
+    end = DummyOperator(task_id="End")
+
+    start >> sparkIgzTask >> end
