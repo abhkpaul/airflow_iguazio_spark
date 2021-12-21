@@ -4,7 +4,7 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.operators.dummy_operator import DummyOperator
 from datetime import datetime, timedelta
 
-sys.path.insert(0, '/opt/airflow/files/igz_func-1.0-py3.8.egg')
+sys.path.insert(0, '/opt/airflow/dist/igz_func-1.0-py3.8.egg')
 from func import remoteTrigger as f
 
 default_args = {
