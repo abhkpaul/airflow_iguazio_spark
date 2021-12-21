@@ -1,0 +1,14 @@
+setup.py
+airflow_iguazio_spark.egg-info/PKG-INFO
+airflow_iguazio_spark.egg-info/SOURCES.txt
+airflow_iguazio_spark.egg-info/dependency_links.txt
+airflow_iguazio_spark.egg-info/requires.txt
+airflow_iguazio_spark.egg-info/top_level.txt
+dags/__init__.py
+dags/afd-mlrun-spark-iguazio.py
+func/__init__.py
+func/createFunction.py
+func/remoteTrigger.py
+func/runner.py
+modules/__init__.py
+modules/jobA.py

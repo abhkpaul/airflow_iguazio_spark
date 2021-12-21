@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/igz_func.iml" filepath="$PROJECT_DIR$/.idea/igz_func.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/airflow_iguazio_spark.iml" filepath="$PROJECT_DIR$/.idea/airflow_iguazio_spark.iml" />
     </modules>
   </component>
 </project>
