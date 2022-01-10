@@ -8,13 +8,13 @@ import mlrun
 
 def main(**kwargs):
 
-    mlrun.set_environment(project="sparksimulation")
-    project = mlrun.get_or_create_project("sparksimulation", context="./")
+    mlrun.set_environment(project="sparksimulationab")
+    project = mlrun.get_or_create_project("sparksimulationab", context="./")
     sj = mlrun.new_function(kind="spark",
-                            project="sparksimulation",
+                            project="sparksimulationab",
                             command="/v3io/projects/sparksimulation/runner.py",
-                            name="igz_func_oppidreadyfill",
-                            image=".mlrun/func-sparksimulation-igz_func_oppidreadyfill:latest")
+                            name="igz_func_joba",
+                            image=".mlrun/func-sparksimulation-igz_func_joba:latest")
 
     sj.with_driver_limits(cpu="1300m")
     sj.with_driver_requests(cpu=1, mem="512m")
@@ -24,7 +24,7 @@ def main(**kwargs):
 
     sj.with_igz_spark()
 
-    sj.spec.deps['pyFiles'] = ['local:///v3io/projects/sparksimulation/airflow_iguazio_spark-1.0-py3.8.egg']
+    sj.spec.deps['pyFiles'] = ['local:///v3io/projects/sparksimulationab/airflow_iguazio_spark-1.0-py3.8.egg']
 
     sj.spec.replicas = 1
 

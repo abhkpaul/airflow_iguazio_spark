@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ad655fb-7a87-4f20-9408-01e11ba285dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/igz_func.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/airflow_iguazio_spark.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/func/createDummy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/jobB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/oppIdReadyFill.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow_iguazio_spark.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/airflow_iguazio_spark.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/dags/afd-mlrun-spark-iguazio.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/dags/afd-mlrun-spark-iguazio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/func/createFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/func/createFunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/func/remoteTrigger.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/func/remoteTrigger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/func/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/func/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/modules/jobA.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/modules/jobA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dags/afd-mlrun-spark-iguazio.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/afd-mlrun-spark-iguazio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/airflow_iguazio_spark-1.0-py3.8.egg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/airflow_iguazio_spark-1.0-py3.8.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/func/createFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/func/createFunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/func/remoteTrigger.py" beforeDir="false" afterPath="$PROJECT_DIR$/func/remoteTrigger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/func/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/func/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/jobA.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/jobA.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.createFunction">
     <configuration name="createFunction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="airflow_iguazio_spark" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,9 +90,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="jobB" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="airflow_iguazio_spark" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/jobB.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="airflow_iguazio_spark" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/func" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/func/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.createFunction" />
+        <item itemvalue="Python.jobB" />
+        <item itemvalue="Python.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -96,7 +156,13 @@
       <workItem from="1639911384699" duration="3150000" />
       <workItem from="1639985014692" duration="9202000" />
       <workItem from="1640085829261" duration="3968000" />
-      <workItem from="1640091636144" duration="255000" />
+      <workItem from="1640091636144" duration="7389000" />
+      <workItem from="1640171227914" duration="6689000" />
+      <workItem from="1640260317941" duration="4634000" />
+      <workItem from="1641189061782" duration="6670000" />
+      <workItem from="1641272161957" duration="8960000" />
+      <workItem from="1641552358001" duration="9799000" />
+      <workItem from="1641813487340" duration="15349000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1640091014268</created>
@@ -150,6 +216,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/airflow_iguazio_spark$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1641303314421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/func" />
     <SUITE FILE_PATH="coverage/igz_func$createFunction.coverage" NAME="createFunction Coverage Results" MODIFIED="1640008491381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/func" />
+    <SUITE FILE_PATH="coverage/airflow_iguazio_spark$jobB.coverage" NAME="jobB Coverage Results" MODIFIED="1641562844524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules" />
+    <SUITE FILE_PATH="coverage/airflow_iguazio_spark$createFunction.coverage" NAME="createFunction Coverage Results" MODIFIED="1641825190151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/func" />
   </component>
 </project>

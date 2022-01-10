@@ -1,0 +1,26 @@
+kind: run
+metadata:
+  name: pyspark
+  uid: 2f268193df544b6aa069ee23ecb552b7
+  iteration: 0
+  project: default
+  labels:
+    host: DELL508099SMQ53
+  annotations: {}
+spec:
+  function: ''
+  log_level: info
+  parameters: {}
+  handler: null
+  outputs: []
+  output_path: ''
+  inputs: {}
+  hyperparams: {}
+  hyper_param_options: {}
+  data_stores: []
+status:
+  state: running
+  results: {}
+  start_time: '2022-01-07T13:22:25.635802+00:00'
+  last_update: '2022-01-07T13:22:25.635802+00:00'
+  artifacts: []

@@ -4,7 +4,7 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.operators.dummy_operator import DummyOperator
 from datetime import datetime, timedelta
 
-sys.path.insert(0, '/opt/airflow/dist/igz_func-1.0-py3.8.egg')
+sys.path.insert(0, '/opt/airflow/files/airflow_iguazio_spark-1.0-py3.8.egg')
 from func import remoteTrigger as f
 
 default_args = {
@@ -25,12 +25,29 @@ with DAG(dag_id='afd-airflow-spark-iguazio',
          ) as dag:
     start = DummyOperator(task_id="Start")
 
-    sparkIgzTask = PythonOperator(task_id="sparkIgzTask",
-                           python_callable=f.trigger_igz_spark,
-                           op_kwargs={'project': 'sparksimulationab', 'function': 'igz_func_joba'},
-                           provide_context=True
-                           )
+    d2_d3_common_features = PythonOperator(task_id="d2_d3_common_features",
+                                  python_callable=f.trigger_igz_spark,
+                                  op_kwargs = {'igz_project': 'sparksimulation',
+                                               'igz_function': 'igz_func_oppidreadyfill',
+                                               'spark_package': 'modules',
+                                               'spark_module': 'oppIdReadyFill',
+                                               'spark_function' : 'd2_d3_common_features',
+                                               'spark_function_param' : 'Monday'},
+                                  provide_context=True
+                                  )
 
+    d3_not_in_prompt_list_at_pos = PythonOperator(task_id="d3_not_in_prompt_list_at_pos",
+                                  python_callable=f.trigger_igz_spark,
+                                  op_kwargs={'igz_project': 'sparksimulation',
+                                             'igz_function': 'igz_func_oppidreadyfill',
+                                             'spark_package': 'modules',
+                                             'spark_module': 'oppIdReadyFill',
+                                             'spark_function': 'd3_not_in_prompt_list_at_pos',
+                                             'spark_function_param': 'Monday'},
+                                  provide_context=True
+                                  )
+
+    # params = {'project': 'sparksimulationab', 'function': 'igz_func_joba', 'param': 'test_spark'},
     end = DummyOperator(task_id="End")
 
-    start >> sparkIgzTask >> end
+    start >> d2_d3_common_features >> d3_not_in_prompt_list_at_pos >> end

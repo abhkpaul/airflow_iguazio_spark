@@ -3,6 +3,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 
 def main():
+    print("param : ")
     context = get_or_create_ctx("pyspark")
     spark = SparkSession.builder.appName("SparkJobA").getOrCreate()
 
