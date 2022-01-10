@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ad655fb-7a87-4f20-9408-01e11ba285dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/func/createDummy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/jobB.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/oppIdReadyFill.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow_iguazio_spark.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/airflow_iguazio_spark.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dags/afd-mlrun-spark-iguazio.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/dags/afd-mlrun-spark-iguazio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/func/createFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/func/createFunction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/func/remoteTrigger.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/func/remoteTrigger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/func/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/func/runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/modules/jobA.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/modules/jobA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dags/afd-mlrun-spark-iguazio.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/afd-mlrun-spark-iguazio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/airflow_iguazio_spark-1.0-py3.8.egg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/airflow_iguazio_spark-1.0-py3.8.egg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/func/createFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/func/createFunction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/func/remoteTrigger.py" beforeDir="false" afterPath="$PROJECT_DIR$/func/remoteTrigger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/func/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/func/runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/jobA.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/jobA.py" afterDir="false" />
-    </list>
+    <list default="true" id="2ad655fb-7a87-4f20-9408-01e11ba285dd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +144,7 @@
       <workItem from="1641189061782" duration="6670000" />
       <workItem from="1641272161957" duration="8960000" />
       <workItem from="1641552358001" duration="9799000" />
-      <workItem from="1641813487340" duration="15349000" />
+      <workItem from="1641813487340" duration="15639000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1640091014268</created>
